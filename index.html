@@ -1,0 +1,101 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Устройства</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef1f5;
+            margin: 0;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 260px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 22px;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .card a button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 12px;
+            background: #4A90E2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: background 0.2s ease;
+        }
+
+        .card a button:hover {
+            background: #357ABD;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Устройства умного дома</h1>
+
+<div class="cards">
+
+    <div class="card">
+        <h3>Свет</h3>
+        <p>Управление освещением в вашем доме.</p>
+        <a href="devices/light.html">
+            <button>Открыть</button>
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Климат</h3>
+        <p>Контроль температуры и воздуха.</p>
+        <a href="devices/climate.html">
+            <button>Открыть</button>
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Безопасность</h3>
+        <p>Система охраны и мониторинга.</p>
+        <a href="devices/security.html">
+            <button>Открыть</button>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
